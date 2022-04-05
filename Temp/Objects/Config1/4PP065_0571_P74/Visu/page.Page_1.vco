@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Intermediate xmlns="http://br.automation.co.at/AS/VC/Intermediate">
+  <Folder Name="Layers">
+    <Folder Name="Page_1Default" TargetIndex="Source[local].Page[Page_1].Layer[Default]">
+      <Folder Name="Controls">
+        <Folder Name="POBJ" />
+      </Folder>
+      <Folder Name="POBJ">
+        <Object Name="Default" ClsId="0x401" Version="1" Type="LAY" RefString="Source[local].Page[Page_1].Layer[Default]">
+          <Reference Name="StatusDP" Type="DP">None</Reference>
+          <UInt32 Name="CtrlCount">0</UInt32>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="Layers">
+    <Folder Name="Page_1Layer_1" TargetIndex="Source[local].Page[Page_1].Layer[Layer_1]">
+      <Folder Name="Controls">
+        <Folder Name="POBJ">
+          <Object Name="Trend_1" ClsId="0x1011" Version="1" Type="CTRL" RefString="Source[local].Page[Page_1].Layer[Layer_1].Control[Trend_1]">
+            <UInt32 Name="Left">0</UInt32>
+            <UInt32 Name="Top">31</UInt32>
+            <UInt32 Name="Right">319</UInt32>
+            <UInt32 Name="Bottom">187</UInt32>
+            <Reference Name="TrendConfig" Type="TRE">Source[local].Trend[Trend_3]</Reference>
+            <UInt32 Name="ControlID">0</UInt32>
+            <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001011].StyleClass[Trend]</Reference>
+            <UInt16 Name="StyleTableSize">20</UInt16>
+            <UInt16 Name="Reserved">0</UInt16>
+            <Group Name="Border">
+              <UInt16 Name="Offset">0</UInt16>
+              <UInt16 Name="Size">4</UInt16>
+              <Reference Name="Data" Type="BRD">Source[local].Border[Bump]</Reference>
+            </Group>
+            <Group Name="SelectItemDatapoint">
+              <UInt16 Name="Offset">48</UInt16>
+              <UInt16 Name="Size">4</UInt16>
+              <Reference Name="Data" Type="DP">Source[global].Variable[DataSource.real_speed]</Reference>
+            </Group>
+            <Group Name="End Marker">
+              <UInt16 Name="Offset">65535</UInt16>
+              <UInt16 Name="Size">0</UInt16>
+            </Group>
+          </Object>
+        </Folder>
+      </Folder>
+      <Folder Name="POBJ">
+        <Object Name="Layer_1" ClsId="0x401" Version="1" Type="LAY" RefString="Source[local].Page[Page_1].Layer[Layer_1]">
+          <Reference Name="StatusDP" Type="DP">None</Reference>
+          <UInt32 Name="CtrlCount">1</UInt32>
+          <Reference Name="Trend_1" Type="CTRL">Source[local].Page[Page_1].Layer[Layer_1].Control[Trend_1]</Reference>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="Forms">
+    <Folder Name="POBJ">
+      <Object Name="Page_1" ClsId="0x400" Version="1" TargetIndex="1" Type="PAGE" RefString="Source[local].Page[Page_1]">
+        <UInt32 Name="FormLanguage">0</UInt32>
+        <Reference Name="StartControl" Type="CTRL">None</Reference>
+        <UInt32 Name="LayerCount">3</UInt32>
+        <UInt32 Name="MoveFocus">1</UInt32>
+        <Group Name="Styleable Properties">
+          <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00000400].StyleClass[default]</Reference>
+          <UInt16 Name="StyleTableSize">4</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Group>
+        <Reference Name="FormLayer0" Type="LAY">Source[local].Layer[CommonLayer_1]</Reference>
+        <Reference Name="FormLayer1" Type="LAY">Source[local].Page[Page_1].Layer[Default]</Reference>
+        <Reference Name="FormLayer2" Type="LAY">Source[local].Page[Page_1].Layer[Layer_1]</Reference>
+        <Group Name="MovementOrder">
+          <UInt32 Name="Count">0</UInt32>
+        </Group>
+      </Object>
+    </Folder>
+  </Folder>
+</Intermediate>
